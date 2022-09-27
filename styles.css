@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all .2s linear;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(27, 27, 27);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+@media (max-width : 768px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .logo {
+        color: white;
+        font-size: 2.2rem;
+        /* font-weight: 400; */
+        padding-top: 2rem;
+        padding-left: 1.5rem;
+        padding-bottom: .7rem;
+    }
+
+    .nav {
+        width: 100%;
+        height: 2rem;
+        /* background: white; */
+        padding-left: 1rem;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .nav ul li {
+        height: 2rem;
+        /* background: red; */
+
+    }
+
+    .nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 0 .5rem;
+    }
+
+    .hello {
+        color: rgb(97, 97, 97);
+        /* font-size: 1rem; */
+        padding: 3rem 0 1rem 1.5rem;
+    }
+
+    .bg {
+        background: url(./virus_v2_by_maryanion_da9ux7q.png) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 545px;
+        /* color: white; */
+        z-index: -2;
+        position: relative;
+    }
+    .bg::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom, black, rgba(0, 0, 0, .95), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0));
+        z-index: -1;
+    }
+
+    .mainText {
+        font-size: 1.1rem;
+        color: white;
+        /* background: blue; */
+        padding: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    #quote {
+        margin-bottom: 1rem;
+    }
+
+    .scrollDown {
+        letter-spacing: .1rem;
+        color: white;
+        border: solid white 1px;
+        border-radius: 1.7rem;
+        background: none;
+        margin: 200px 0 0 1rem;
+        padding: .8rem;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .scrollDown p,
+    .scrollDown .arrow {
+        padding: 0 1rem 0 1rem;
+    }
+
+}
